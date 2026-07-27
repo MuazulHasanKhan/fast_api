@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 import models, schemas
 
 # all operations happens in a database session, which is a temporary workspace for interacting with the database. It allows you to query, add, update, and delete records in a controlled manner. The session ensures that changes are tracked and can be committed or rolled back as needed.
-def get_employees(db:Session, employee_id:int):
+def get_employees(db:Session):
     return db.query(models.Employee).all()
 
 def get_employee(db: Session, employee_id:int):

@@ -18,7 +18,7 @@ def test_loan_eligibility_pass():
 def test_eligibility_fail():
     payload = {
         "income": 40000,
-        "age": 20,
+        "age": 20, 
         "employment_status": "unemployed"
     }
 

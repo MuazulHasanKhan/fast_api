@@ -13,3 +13,4 @@ def make_prediction(data:dict)-> float:
 def batch_predict(data: list[dict])-> np.array:
     input_data = np.array([list(d.values()) for d in data])
     return model.predict(input_data)
+
